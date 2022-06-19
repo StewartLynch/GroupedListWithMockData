@@ -10,7 +10,7 @@
 import SwiftUI
 
 struct PersonListView: View {
-    @StateObject private var viewModel = PersonListViewModel()
+    @StateObject var viewModel = PersonListViewModel()
     var body: some View {
         NavigationView {
             List {
@@ -35,6 +35,6 @@ struct PersonListView: View {
 
 struct PersonListView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonListView()
+        PersonListView(viewModel: PersonListViewModel(forPreview: true))
     }
 }

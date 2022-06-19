@@ -12,4 +12,10 @@ import Foundation
 class PersonListViewModel: ObservableObject {
     @Published var people: [Person] = []
     
+    init(forPreview: Bool = false) {
+        if forPreview {
+            people = MockService.sampleData
+        }
+    }
+    
 }
