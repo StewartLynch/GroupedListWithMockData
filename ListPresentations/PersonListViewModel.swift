@@ -7,13 +7,9 @@
 // Subscribe on YouTube: https://youTube.com/StewartLynch
 //
 
-import SwiftUI
+import Foundation
 
-@main
-struct ListPresentationsApp: App {
-    var body: some Scene {
-        WindowGroup {
-            PersonListView()
-        }
-    }
+class PersonListViewModel: ObservableObject {
+    @Published var people: [Person] = []
+    
 }

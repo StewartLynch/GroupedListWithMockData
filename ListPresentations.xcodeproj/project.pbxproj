@@ -8,23 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		BB227F17285F8A1E0017724A /* ListPresentationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB227F16285F8A1E0017724A /* ListPresentationsApp.swift */; };
-		BB227F19285F8A1E0017724A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB227F18285F8A1E0017724A /* ContentView.swift */; };
+		BB227F19285F8A1E0017724A /* PersonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB227F18285F8A1E0017724A /* PersonListView.swift */; };
 		BB227F1B285F8A1E0017724A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB227F1A285F8A1E0017724A /* Assets.xcassets */; };
 		BB227F1E285F8A1E0017724A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB227F1D285F8A1E0017724A /* Preview Assets.xcassets */; };
 		BB227F25285F8A510017724A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB227F24285F8A510017724A /* Launch Screen.storyboard */; };
 		BB227F27285F8A9B0017724A /* Extension+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB227F26285F8A9B0017724A /* Extension+Bundle.swift */; };
 		BBD42C27285FA91500692394 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD42C26285FA91500692394 /* Person.swift */; };
+		BBD42C29285FB08200692394 /* PersonListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD42C28285FB08200692394 /* PersonListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BB227F13285F8A1E0017724A /* ListPresentations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListPresentations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB227F16285F8A1E0017724A /* ListPresentationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresentationsApp.swift; sourceTree = "<group>"; };
-		BB227F18285F8A1E0017724A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB227F18285F8A1E0017724A /* PersonListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListView.swift; sourceTree = "<group>"; };
 		BB227F1A285F8A1E0017724A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB227F1D285F8A1E0017724A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB227F24285F8A510017724A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		BB227F26285F8A9B0017724A /* Extension+Bundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Bundle.swift"; sourceTree = "<group>"; };
 		BBD42C26285FA91500692394 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		BBD42C28285FB08200692394 /* PersonListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				BB227F16285F8A1E0017724A /* ListPresentationsApp.swift */,
-				BB227F18285F8A1E0017724A /* ContentView.swift */,
+				BB227F18285F8A1E0017724A /* PersonListView.swift */,
+				BBD42C28285FB08200692394 /* PersonListViewModel.swift */,
 				BB227F1A285F8A1E0017724A /* Assets.xcassets */,
 				BB227F24285F8A510017724A /* Launch Screen.storyboard */,
 				BB227F26285F8A9B0017724A /* Extension+Bundle.swift */,
@@ -147,8 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBD42C29285FB08200692394 /* PersonListViewModel.swift in Sources */,
 				BB227F27285F8A9B0017724A /* Extension+Bundle.swift in Sources */,
-				BB227F19285F8A1E0017724A /* ContentView.swift in Sources */,
+				BB227F19285F8A1E0017724A /* PersonListView.swift in Sources */,
 				BBD42C27285FA91500692394 /* Person.swift in Sources */,
 				BB227F17285F8A1E0017724A /* ListPresentationsApp.swift in Sources */,
 			);
