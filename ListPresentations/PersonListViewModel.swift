@@ -61,7 +61,8 @@ class PersonListViewModel: ObservableObject {
     }
     
     func sectionContent(_ key: String) -> [Person] {
-        groupedPeople[key] ?? []
+        let content = groupedPeople[key] ?? []
+        return content.sorted(by: {($0.lastName, $0.firstName) < ($1.lastName, $1.firstName) })
     }
     
 }

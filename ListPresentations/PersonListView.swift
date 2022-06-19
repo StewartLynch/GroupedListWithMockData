@@ -22,9 +22,13 @@ struct PersonListView: View {
                 .pickerStyle(.segmented)
                 .padding()
                 List {
-                ForEach(viewModel.people) { person in
-                    PersonRowView(person: person)
-                }
+                    ForEach(viewModel.sectionHeaders, id: \.self) { key in
+                        Section(header: Text(viewModel.sectionHeader(key)).font(.title)) {
+                            ForEach(viewModel.sectionContent(key)) { person in
+                                PersonRowView(person: person)
+                            }
+                        }
+                    }
             }
             }
             .navigationTitle("People")
@@ -53,7 +57,7 @@ struct PersonRowView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(person.flag + " " + person.fullName)
-                .font(.largeTitle)
+                .font(.title)
             Text(person.department)
                 .font(.title2)
             Text(person.role)
