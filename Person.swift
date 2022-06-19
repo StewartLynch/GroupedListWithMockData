@@ -23,7 +23,7 @@ struct Person: Identifiable {
     
     var flag: String {
         switch country {
-        case "Unided States":
+        case "United States":
             return "🇺🇸"
         case "Canada":
             return "🇨🇦"
@@ -33,6 +33,21 @@ struct Person: Identifiable {
             return "🇬🇧"
         default:
             return "🏳️"
+        }
+    }
+    
+    static func countryFlag(_ country: String) -> String {
+        switch country {
+        case "United States":
+            return "🇺🇸 " + country
+        case "Canada":
+            return "🇨🇦 " + country
+        case "France":
+            return "🇫🇷 " + country
+        case "United Kingdom":
+            return "🇬🇧 " + country
+        default:
+            return "🏳️ " + country
         }
     }
 }
