@@ -10,6 +10,10 @@
 import Foundation
 
 enum MockService {
+    
+    static func seed(file: String) -> [Person] {
+        return Bundle.main.decode([Person].self, from: file)
+    }
     static var sampleData: [Person] {
         [
         Person(firstName: "Stewart",

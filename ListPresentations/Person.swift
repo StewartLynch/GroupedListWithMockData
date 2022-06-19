@@ -9,7 +9,7 @@
 
 import Foundation
 
-struct Person: Identifiable {
+struct Person: Identifiable, Codable {
     var id = UUID().uuidString
     var firstName: String
     var lastName: String
